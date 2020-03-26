@@ -1,6 +1,8 @@
 import React from 'react';
 import classes from './Burger.module.css';
 import BurgerIngredient from './BurgerIngredient/BurgerIngredient';
+// import { withRouter } from 'react-router-dom';
+// Hoc which gives access to parent component's props
 
 const burger = (props) => {
   let transformedIngredients = Object.keys(props.ingredients)
@@ -29,4 +31,5 @@ const burger = (props) => {
   );
 };
 
+// export default withRouter(burger);
 export default burger;
